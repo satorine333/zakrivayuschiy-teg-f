@@ -1,1 +1,1 @@
-https://github.com/satorine333/zakrivayuschiy-teg-f.git
+https://satorine333.github.io/zakrivayuschiy-teg-f/

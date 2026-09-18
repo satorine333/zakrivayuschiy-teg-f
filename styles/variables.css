@@ -1,24 +1,19 @@
 :root {
-  --main-font: 'Inter';
-  --accent-font: 'PressStart2P';
-  --main-font-weight: 410;
-  --card-title-font-weight: 715;
-  --background-gradients:
-    repeating-linear-gradient(
-      to right,
-      #d3d3d3 0 2px,
-      rgba(211, 211, 211, 0) 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0 2px,
-      rgba(211, 211, 211, 0) 2px 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --content-width: clamp(375px, 50vw, 700px);
-  --text-stroke-color: #fff;
-  --animation-fill-color: #f00;
-  --contour-color: #000;
-  --background-color: #fff;
-  --border-color: #000;
+  --font-weight-main: 400;
+  --font-weight-title: 700;
+  --font-main: 'Inter';
+  --font-accent: 'PressStart2P';
+  --main-bg-grid: 
+  repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px),
+  repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px), 
+  linear-gradient(to bottom,  #e7e7e7 0.01%, #1a1a1a);
+  --section-title-font-size: 18px;
+  --content-bg-color: #fff;
+  --main-color: #000;
+  --block-border-width: 2px;
+  --scaled-block-inline-size: clamp(375px, 100%, 700px);
+  --picture-label-stroke-color: #fff;
+  --like-icon-contour-color: #000;
+  --like-icon-animation-fill-color: #f00;
+  --like-icon-alternate-color: #000;
 }
