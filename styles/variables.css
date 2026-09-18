@@ -1,19 +1,50 @@
 :root {
-  --font-weight-main: 400;
-  --font-weight-title: 700;
-  --font-main: 'Inter';
-  --font-accent: 'PressStart2P';
-  --main-bg-grid: 
-  repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px),
-  repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px), 
-  linear-gradient(to bottom,  #e7e7e7 0.01%, #1a1a1a);
-  --section-title-font-size: 18px;
-  --content-bg-color: #fff;
-  --main-color: #000;
-  --block-border-width: 2px;
-  --scaled-block-inline-size: clamp(375px, 100%, 700px);
-  --picture-label-stroke-color: #fff;
-  --like-icon-contour-color: #000;
-  --like-icon-animation-fill-color: #f00;
-  --like-icon-alternate-color: #000;
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", cursive;
+  --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --main-text-weight: 410;
+  --card-title-weight: 715;
+  --bg-image:
+    repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --bg-color: #FFFFFF;
+  --card-bg-color: #000000;
+  --content-width: clamp(375px, 100%, 700px);
+  --header-padding: clamp(10px, 3vw, 20px);
+  --title-font-size: clamp(49px, 5vw, 65px);
+  --description-font-size: clamp(14px, 2vw, 23px);
+  --main-border: 2px solid #000000;
+  --label-text-color: #000000;
+  --label-stroke-color: #ffffff;
+  --accent-color: #000000;
+  --transition-speed: 0.5s ease-in-out;
+  --button-text-color: #ffffff;
+
+  --contour-color: #000000;
+  --core-fill-color: transparent;
+  --main-body-color: transparent;
+  --sparks-color: #ff0000;
+  --sparks-opacity: 0;
+
+  --heart-hover-color: #000000;
+  --heart-liked-color: #ff0000;
+}
+
+.like-icon:hover {
+  --main-body-color: var(--heart-hover-color);
+}
+
+.like-icon.is-liked {
+  --core-fill-color: var(--heart-liked-color);
+  --main-body-color: var(--heart-liked-color);
+  --contour-color: var(--heart-liked-color);
+}
+
+.like-icon:active {
+  --core-fill-color: var(--heart-liked-color);
+  --main-body-color: var(--heart-liked-color);
+  --core-delay: 0s;
+  --body-delay: 0.05s;
 }
